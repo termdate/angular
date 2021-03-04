@@ -1,0 +1,26 @@
+<div class = "header">
+    <h2>HELLO WORLD</h2>
+</div> 
+
+<div class = "header1">
+    <h2> {{title}} </h2>
+</div> 
+
+<div class = "header">
+    <h2>{{ title }}</h2>
+  set Title : <input [(ngModel)] = "title" />
+</div> 
+
+<div class  = "header1">
+    <h2> {{ count }} </h2>
+    <button (click) = "countNumber()"> count </button>
+</div>
+<ul class = 'header'>
+    <li *ngFor = "let item of items">
+        <b *ngIf = "item == 5"> {{ item }} </b> 
+        <span *ngIf = "item !== 5"> {{ item }} </span> 
+    </li>
+</ul>
+
+
+
